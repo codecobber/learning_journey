@@ -1,1 +1,7 @@
+# Ignore python virtual environments
+
 .venv/
+__pycache__/
+
+# Ignore scraped data outputs
+*.csv
