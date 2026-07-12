@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ token|upper }} Tracker Dashboard</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; background-color: #f4f6f9; }
+        h1 { color: #1da1f2; }
+        ul { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        li { padding: 10px 0; border-bottom: 1px solid #eee; list-style-type: none; }
+        li:last-child { border-bottom: none; }
+    </style>
+</head>
+<body>
+
+    <h1>🚀 Live {{ token|upper }} Scraped Headlines</h1>
+    
+    <ul>
+        {% for headline in headlines %}
+            <li>{{ headline }}</li>
+        {% endfor %}
+    </ul>
+
+    <p><a href="/">← Back to Home</a></p>
+
+</body>
+</html>

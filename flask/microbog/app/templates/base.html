@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% if title %}
+    <title>{{ title }} - Microblog</title>
+    {% else %}
+    <title>Welcome to Microblog</title>
+    {% endif %}
+</head>
+<body>
+
+    {% include 'partials/_navbar.html' %}
+
+    <div class="container" style="padding: 0 10px;">
+        {% block content %}{% endblock %}
+    </div>
+
+    {% include 'partials/_footer.html' %}
+    
+</body>
+</html>
